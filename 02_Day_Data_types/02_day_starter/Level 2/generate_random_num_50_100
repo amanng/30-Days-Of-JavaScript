@@ -1,0 +1,3 @@
+let random=Math.random(50,100)*51+50
+random=Math.floor(random)
+console.log(random)

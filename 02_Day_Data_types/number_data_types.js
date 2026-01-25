@@ -1,0 +1,12 @@
+let age = 35;
+const gravity = 9.81;
+let mass = 72;
+const pi = 3.14;
+const boilingPoint = 100;
+const bodyTemp = 37;
+console.log("Age:", age);
+console.log("Gravity:", gravity);
+console.log("Mass:", mass);
+console.log("Pi:", pi);
+console.log("Boiling Point:", boilingPoint);
+console.log("Body Temperature:", bodyTemp);

@@ -1,0 +1,3 @@
+let random=Math.random()*256
+random=Math.floor(random)
+console.log(random)
