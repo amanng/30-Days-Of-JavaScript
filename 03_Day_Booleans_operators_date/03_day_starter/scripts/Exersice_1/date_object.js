@@ -1,0 +1,8 @@
+console.log("Date: ", Date())
+const now=new Date()
+console.log("Month: ", now.getMonth())
+console.log("Date: ", now.getDate())
+console.log("Day: ", now.getDay())
+console.log("Hours: ", now.getHours())
+console.log("Minutes: ", now.getMinutes())
+console.log("TimeStamp: ", now.getTime())
