@@ -1,0 +1,72 @@
+//avoid muttation
+const countries = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+ 'Kenya',
+  'gana',
+  'united state'
+]
+const mernStack = ['MongoDB', 'Express', 'React', 'Node']
+
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+]
+const copyCountries = [...countries];
+console.log(copyCountries);
+const sortedCountries = copyCountries.sort();
+console.log(sortedCountries);
+const sortedWebTech = webTechs.sort();
+console.log(sortedWebTech)
+const sortedMern = mernStack.sort();
+console.log(sortedMern)
+let land = [];
+for (let i = 0; i < countries.length; i++){
+    if (countries[i].includes('land')) {
+        land.push(countries[i])
+    }
+}
+console.log(land)
+let maxlen = 0
+let maxlenCountry=''
+for (let j = 0; j < countries.length; j++) {
+    if (countries[j].length > maxlen) {
+        maxlen = countries[j].length
+        maxlenCountry = copyCountries[j]
+    }
+}
+console.log(maxlenCountry)
+let charLen = 0
+let fourChar = []
+for (let k = 0; k < countries.length; k++){
+    if (countries[k].length == 4)
+        fourChar.push(countries[k])
+}
+console.log(fourChar)
+const twoWord = []
+for (let f = 0; f < countries.length; f++){
+    if (countries[f].includes(' ')) {
+        twoWord.push(countries[f])
+    }
+}
+console.log(twoWord)
+let capitalize = []
+let sorted = countries.sort();
+let reversed = sorted.reverse();
+for (let h = 0; h < countries.length; h++){
+    capitalize = reversed[h].toUpperCase();
+    console.log(capitalize)
+}
